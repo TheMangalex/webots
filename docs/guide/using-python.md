@@ -9,7 +9,6 @@ The classes are either representations of a node of the scene tree (such as Robo
 A complete description of these functions can be found in the reference guide while the instructions about the common way to program a Python controller can be found in [this chapter](programming-fundamentals.md).
 
 The Python API of Webots supports Python versions 3.7, 3.8, 3.9, and 3.10.
-On Ubuntu 18.04 it also supports Python version 3.6.
 
 Alternatively to the Webots built-in editor, [PyCharm](https://www.jetbrains.com/pycharm) can be used to edit and launch Python controllers, see the [Using PyCharm with Webots](using-your-ide.md#pycharm) chapter for a step-by-step procedure.
 
@@ -40,6 +39,9 @@ To check the versions of Python installed on your system, you can type in a term
 
 You can install Python 3.7, 3.8, 3.9 or 3.10 from the [Python web site](https://www.python.org) or using [Homebrew](https://brew.sh).
 To check the versions of Python installed on your system, you can type in a terminal: `python --version`, `python3.8 --version`, `python3 --version`, etc.
+
+Python 3.7 and Homebrew Python are not provided for Apple Silicon processors.
+If you need Homebrew Python for Apple Silicon, you will have to recompile the Python wrapper by yourself, as explained below.
 
 > **Note**: To use Python 3.x on macOS, it is recommended to set the absolute path to the python3 executable (e.g. `/Library/Frameworks/Python.framework/Versions/3.x/bin/python3`) in the [`Python command` option of the Preferences](preferences.md#general).
 
