@@ -51,6 +51,8 @@ public:
   const std::string &name() const { return mRobotName; }
   Device *getDevice(const std::string &name);
 
+  bool enableSensor(std::string name, double rate = -1.0);
+
   static std::string fixedNameString(const std::string &name);
 
 protected:

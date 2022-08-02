@@ -35,6 +35,7 @@ namespace highlevel {
     // Create RobotHW interface
     for (ControlledMotor &controlledMotor : mControlledMotors) {
       webots::PositionSensor *positionSensor = controlledMotor.motor->getPositionSensor();
+
       if (positionSensor) {
         positionSensor->enable(mRobot->getBasicTimeStep());
 
