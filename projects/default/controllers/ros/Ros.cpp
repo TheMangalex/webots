@@ -181,7 +181,7 @@ void Ros::launchRos(int argc, char **argv) {
     ROS_FATAL("Failed to contact master at %s. Please start ROS master and restart this controller.", getenv("ROS_MASTER_URI"));
     exit(EXIT_SUCCESS);
   }
-
+  
   mNodeHandle = new ros::NodeHandle(mRosNameSpace);
   ROS_INFO("The controller is now connected to the ROS master.");
 

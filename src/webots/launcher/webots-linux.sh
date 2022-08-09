@@ -72,7 +72,8 @@ export WEBOTS_TMPDIR=$WEBOTS_TMPDIR
 export LD_LIBRARY_PATH="$webots_home/lib/webots":$LD_LIBRARY_PATH
 
 export QT_ENABLE_HIGHDPI_SCALING=1
-
+#If problems with ui scale exist, adapt this parameter
+#export QT_SCALE_FACTOR=0.5
 # Fixes warning on Ubuntu 22.04
 unset XDG_SESSION_TYPE
 unset WAYLAND_DISPLAY
